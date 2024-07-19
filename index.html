@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umbrella Corporation </title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Umbrella Corporation </h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                </ul>
+                <div class="menu-icon" id="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="https://i.pinimg.com/564x/4f/5a/06/4f5a06a1d171b13f75a0cc311e98bed4.jpg" alt="Imagem da Loja">
+            </div>
+            <div class="about-text">
+                <h2>Sobre a Umbrella Corporation </h2>
+                <p>Fundada em março de 1968 por Ozwell Spencer, James Marcus e Edward Ashford, a Umbrella Corporation foi um grande conglomerado farmacêutico com laboratórios e bases espalhadas em quase todos os lugares do mundo, mas com maior concentração na Europa.Oficialmente, a Umbrella era desenvolvedora de uma vasta gama de produtos farmacêuticos, mas extra-oficialmente o verdadeiro objetivo e foco de trabalho da corporação era o desenvolvimento de armas biológicas e tecnologia relacionada a engenharia genética, e foi justamente isso que deu a Umbrella muita riqueza e influência em praticamente todos os âmbitos do poder, principalmente após passar a ser membro do conselho executivo do Consórcio Farmacêutico Global.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="products">
+        <h2>Produtos</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://i.etsystatic.com/33315444/r/il/758c2a/4746850578/il_fullxfull.4746850578_d8un.jpg" alt="Produto 1">
+                <h3>O vírus T</h3>
+                <p>O Vírus T. O vírus T é um vírus altamente infeccioso que foi criado pelo Laboratório Arklay da Corporação Umbrella. O objetivo da empresa era desenvolver uma arma biológica para uso militar.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <img src="https://p.turbosquid.com/ts-thumb/6A/ZBALU2/A0NFGpk3/tvirus.bmpb70b8197425f4f0cae0affe8a62ada54zoom/jpg/1306448636/600x600/fit_q87/abe5f8674b2b41345e8740f609597d434ae88e83/tvirus.bmpb70b8197425f4f0cae0affe8a62ada54zoom.jpg" alt="Produto 2">
+                <h3>G-Vírus</h3>
+                <p>O Golgotha Vírus (abreviado como G-Vírus, G) foi descoberto por William Birkin após a administração do protótipo do parasita NE-Alfa em Lisa Trevor.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <img src="https://i.etsystatic.com/10713985/r/il/adf168/860357425/il_fullxfull.860357425_hbja.jpg" alt="Produto 3">
+                <h3>C, G, T Vírus</h3>
+                <p>Aqui temos os vírus C, G e T, que são agentes de armas biológicas capazes de acabar com nações.</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+            <div class="product-item">
+                <img src="https://cdna.artstation.com/p/assets/images/images/037/074/434/large/thomas-binder-umbrela04.jpg?1619429792" alt="Produto 4">
+                <h3>C-vírus</h3>
+                <p> O C-vírus. Tem comportamento imprevisível e tendem a sofrer transformações quando sofrem dano em alguma parte do corpo</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        // JavaScript para alternar o menu dropdown
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Fecha o menu quando clicar fora dele
+        document.addEventListener('click', (e) => {
+            if (!menuIcon.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
